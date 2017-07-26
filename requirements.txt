@@ -1,0 +1,5 @@
+six
+wave
+numpy
+pygame
+fluidsynth

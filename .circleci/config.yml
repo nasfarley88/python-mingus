@@ -30,9 +30,11 @@ jobs:
       - run:
           name: install dependencies
           command: |
+            sudo apt-get install libfluidsynth1 -y
             python3 -m venv venv
             . venv/bin/activate
             pip install -e .
+            pip install -r requirements.txt
             pip install nose2
             # pip install -r requirements.txt
 
